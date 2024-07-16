@@ -64,6 +64,7 @@ def check_resources_sufficient(drink):
 
 
 total_money: float = 0
+
 isOff = False
 
 while not isOff:
