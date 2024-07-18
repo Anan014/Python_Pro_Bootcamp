@@ -25,11 +25,7 @@ MENU = {
 }
 
 
-resources = {
-    "water": 3000,
-    "milk": 200,
-    "coffee": 100,
-}
+resources = { "water": 3000, "milk": 200, "coffee": 100}
 
 money: dict[str, float] = {
     "PENNIES" : 0.01,
@@ -65,9 +61,7 @@ def check_resources_sufficient(drink):
 
 total_money: float = 0
 
-
 isOff = False
-
 
 while not isOff:
     drink = input("What would you like? (Espresso/Latte/Cappuccino): ").lower()
@@ -94,5 +88,4 @@ while not isOff:
         else:
             print("no resources")
 
-
-print("Good Bye!")
+print("Good Bye")
