@@ -27,12 +27,7 @@ MENU = {
 
 resources = { "water": 3000, "milk": 200, "coffee": 100}
 
-money: dict[str, float] = {
-    "PENNIES" : 0.01,
-    "NICKLES" : 0.05,
-    "DIMES" : 0.10,
-    "QUARTERS" : 0.25
-}
+money: dict[str, float] = {    "PENNIES" : 0.01,    "NICKLES" : 0.05,    "DIMES" : 0.10,    "QUARTERS" : 0.25}
 
 def print_resources():
     print(f"Water: {resources['water']}ml")
