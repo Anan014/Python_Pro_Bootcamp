@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}Restaurants{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <h1>All Cafes</h1>
+
+            <p>{{cafe}}</p>
+
+            <table class="table table-dark table-striped table-hover">
+                <tbody>
+                {% for cafeDetails in cafes %}
+                  {% set outer_loop = loop %}
+                <tr>
+                    {% for cafe in cafeDetails %}
+                    {% if loop.index == 2 and outer_loop.index > 1%}
+                    <td style="color:red">
+                    <a href={{cafe}} class="link-warning">Maps Link</a>
+
+                    </td>
+                    {% else %}
+                    <td>{{cafe}}</td>
+                    {% endif%}
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+
+            <p><a href="/">Return to index page</a></p>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
