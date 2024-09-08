@@ -17,7 +17,7 @@ ORIGIN_CITY_IATA = "LON"
 
 # ==================== Update the Airport Codes in Google Sheet ====================
 
-#  In main.py check if sheet_data contains any values for the "iataCode" key.
+#  In old_main.py check if sheet_data contains any values for the "iataCode" key.
 #  If not, then the IATA Codes column is empty in the Google Sheet.
 #  In this case, pass each city name in sheet_data one-by-one
 #  to the FlightSearch class to get the corresponding IATA code
