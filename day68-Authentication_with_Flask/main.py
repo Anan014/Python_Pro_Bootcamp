@@ -15,9 +15,11 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
 
+
 # Configure Flask-Login's Login Manager
 login_manager = LoginManager()
 login_manager.init_app(app)
+
 
 # Create a user_loader callback
 @login_manager.user_loader
