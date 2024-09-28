@@ -167,3 +167,6 @@ cython_debug/
 /day39/.env
 /env/day39_env.env
 /env/day40_env.env
+
+
+.DS_Store
